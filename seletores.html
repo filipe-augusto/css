@@ -6,7 +6,40 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* ... 
+        *      - universal
+        elem - direto pelo elemento
+        .class - para classe (prjetado para css)
+        #id     - pelo id
+        [atributos]  - criar atributo na tag
+        :pseudo-class - para classe
+        ::pseudo-elemento - para elementos
+        COMBINAR SELETORES
+        div + p
+        div > p   - tags p dentro de div
+        div ~ P
+        div p 
+
+        */
+        /* * 
+        #aprovados
+        .tag
+        #aninhado > div
+        P + ul 
+        P ~ ul {
+        [feira]{
+        [feira= 'escritorio empresa']{ 
+        [feira *=sa] -  contem sa? 
+         span:nth-child(1){ filho numero 1
+        section > :nth-child(odd){ 
+            */
+          section > span:nth-child(3){ /* */
+                background-color: black;
+                color: slateblue;
+            }
+            
+      
+
     </style>
 </head>
 
@@ -29,10 +62,12 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag '>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
+                        <p class='tag'>4</p>
+                        <span class='tag'>5</span>
                     </section>
                 </div>
             </div>
