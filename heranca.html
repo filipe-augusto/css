@@ -3,15 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Herança</title>
     <style>
         /* ... */
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            border: solid 3px red;
+            padding-top: 50px;
+            margin: 10px  100px 150px 200px;
+        }
+
+        div{
+            border: inherit;/* Herdar*/
+            padding:inherit;   
+        }
     </style>
 </head>
 
 <body>
-    <h1>Herança</h1>
+    <h1 style="background-color: chartreuse;">Herança</h1>
     <div>Estou herdando</div>
+    <span><p>teste</p></span>
 </body>
 
 </html>

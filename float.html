@@ -8,21 +8,33 @@
         body {
             background-color: #222;
         }
-
+        
         .c1 {
             background-color: red;
+            float: right;
         }
 
         .c2 {
             background-color: green;
+            clear: right;/*enxerga o espaço gerado pelo float right*/
+            clear: both;
         }
-        
+
         .c3 {
             background-color: blue;
+            clear: both;
+            float:right;
         }
 
         .c4 {
             background-color: orange;
+            clear: both;
+        }
+
+        div {
+            height: 150px;
+            width: 150px;
+            /*  float: right; */
         }
     </style>
 </head>
