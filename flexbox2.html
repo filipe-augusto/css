@@ -6,7 +6,43 @@
     <title>Flexbox #02</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+     div{
+         border: solid 5px dodgerblue;
+         font-size: 40px;
+     }
+     .flex-container div{
+        box-sizing: border-box; /*o tamanho da caixa vai considerar o tamanho da caixa*/
+     }
+     .flex-container{
+         display: flex;
+         width: 300px;
+         height: 600px;
+     }
+     .flex-container div:nth-child(3){
+         background-color: indianred;
+         order: 1;/*passe a ter uma ordem maior- e será exibido por ultimo*/
+         order: -1; /*passa a ter uma ordem menor - e será exibido primeiro*/
+         align-self:center;
+         align-self: flex-end;
+         align-self: stretch; /*deixa a forma normal*/
+     }
+   
+     .flex-container div{
+         width: 100px;
+         flex-grow: 0;
+         flex: 1;
+     }
+     .flex-container div:nth-child(1){
+            flex-grow: 2;
+     }
+     .flex-container{
+         width: 300px;
+         flex-shrink: 1; /*vai ser distribuido o espaço que esta faltando*/
+     }
+     .flex-container div:nth-child(1){
+            flex-shrink: 5;
+     }
+
     </style>
 </head>
 

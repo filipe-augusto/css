@@ -6,7 +6,51 @@
     <title>Flexbox #01</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        div{
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+      .big{
+          font-size: 1.5em;
+      }
+      .flex-container {
+          display: flex; 
+          flex-direction: column;
+          flex-direction: column-reverse;
+          flex-direction:row-reverse ;
+          flex-direction: row;
+          width: 50%;
+          flex-wrap: wrap;
+          flex-wrap: wrap-reverse;
+        flex-flow: row wrap;
+        height: 200px;
+        flex-flow: column-reverse wrap;
+        flex-flow: row wrap;
+          justify-content: flex-start; /*alinhado para o começo*/
+          justify-content: flex-end; /*alinhado para o final*/
+          justify-content:center; /*alinhado no centro*/
+          justify-content: space-around;/*alinhado proporcionalmente*/
+          flex-direction: row-reverse;
+          justify-content: space-between; /*espaço no meio*/
+          
+          
+          /*cross Axis*/
+          height: 400px;
+          align-items: stretch;
+          align-items: baseline;
+          align-items: flex-start; /*alinha no começo*/
+          align-items: flex-end; /*alinha no fim*/
+          align-items: center; /*alinha no centro*/
+
+          /*mais de uma linha*/
+          align-content: flex-start;/*todas as linhas no comço*/
+          align-content: flex-start; /*todas as linhas no final*/
+          align-content: center; /*itens no centro*/
+          align-content: space-between; /*espaço no meio*/
+          align-content: space-around; /*espaço ao redor*/
+      }
+
     </style>
 </head>
 
