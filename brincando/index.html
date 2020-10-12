@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        .quadro>div {
+            height: 100px;
+            width: 300px;
+            border: 5px solid black;
+            padding: 3px;
+            margin: 5px;
+            overflow-y: scroll;
+        }
+
+        @media(min-width: 500px) {
+            .quadro>div {
+                height: 200px;
+                width: 200px;
+                display: inline-block;
+            }
+        }
+
+        .blocoA {
+            background-color: red;
+        }
+
+        .blocoB {
+            background-color: green;
+        }
+
+
+        .blocoC {
+            background-color: blue;
+        }
+
+        .campo>div,
+        .campo>div>div {
+            border: 1px solid brown;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .bola1 {
+            background-color: coral;
+           
+        }
+
+        .bola2 {
+            background-color: crimson;
+            
+        }
+
+        .bola3 {
+            background-color: darkorchid;
+       
+        }
+
+        .bola4 {
+            background-color: chocolate;
+          
+        }
+
+        .menu {
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            /*   position:  fixed; */
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 0px;
+        }
+
+
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+        }
+
+
+        li {
+            float: left;
+            margin: 5px;
+            height: 120px;
+            width: 120px;
+            text-align: center;
+        }
+
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            height: 60px;
+            width: 60px;
+            text-decoration: none;
+            border-radius: 50%;
+            background-color: teal;
+
+        }
+
+        .menu>ul {
+            display: none;
+            transition: 2s;
+        }
+
+        .menu:hover>ul {
+            display: block;
+           
+            transition: 2s;
+        }
+
+     
+    </style>
+</head>
+
+<body>
+
+    <div class="quadro">
+        <div class='blocoA'>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium quis aspernatur fuga autem
+                error iure sunt, est consequatur asperiores ab nesciunt non qui, at veritatis itaque totam harum
+                molestiae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium quis aspernatur fuga autem
+                error iure sunt, est consequatur asperiores ab nesciunt non qui, at veritatis itaque totam harum
+                molestiae?</p>
+        </div>
+        <div class="blocoB">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid velit unde explicabo, quibusdam
+                libero quod ad, officia ullam veniam et assumenda beatae suscipit? Odio a veritatis assumenda ipsam
+                rerum.</p>
+        </div>
+        <div class="blocoC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque saepe nobis cum cumque
+            officiis eum nisi incidunt. Veritatis sed aliquid natus magni cum libero eos velit, dicta debitis illo iure!
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium quis aspernatur fuga autem
+                error iure sunt, est consequatur asperiores ab nesciunt non qui, at veritatis itaque totam harum
+                molestiae?</p>
+        </div>
+    </div>
+    <div class='campo'>
+        <div class='bola1'></div>
+        <div class='bola2'></div>
+        <div class='bola3'></div>
+        <div class='bola4'></div>
+    </div>
+    <div class='menu'>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+
+    </div>
+<div class='box'> 
+
+
+</div>
+
+       
+        
+       
+    
+
+
+
+
+
+
+
+</body>
+
+</html>
